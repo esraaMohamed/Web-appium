@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default Test suite">
+<parameter name="deviceName"  value="Galaxy"/>
+<parameter name="serverUrl"  value="http://0.0.0.0:4723/wd/hub"/>
+<parameter name="appName"  value="ApiDemos-debug.apk"/>
+  <test thread-count="5" name="Default test">
+  <groups>
+        <run>
+            <include name="testGroup"/>
+        </run>
+    </groups>
+    <classes>
+      <class name="com.appium.tests.AndroidTestDemo"/>
+      <class name="SeleniumMaven.Maven.WebDriverHandler"/>
+    </classes>
+  </test> 
+</suite> 
